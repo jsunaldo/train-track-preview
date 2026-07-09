@@ -5,6 +5,14 @@
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Cal Stone — The Train &amp; Track Series</title>
 <meta name="description" content="40 complete training programs, each with a built-in logbook. Pay with Bitcoin — Lightning or on-chain." />
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png" />
+<link rel="icon" type="image/png" sizes="16x16" href="favicon-16.png" />
+<link rel="apple-touch-icon" href="apple-touch-icon.png" />
+<link rel="manifest" href="manifest.webmanifest" />
+<meta name="theme-color" content="#fbfbfd" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="default" />
+<meta name="apple-mobile-web-app-title" content="Cal Stone" />
 <meta name="robots" content="noindex, nofollow" />
 <script>if(sessionStorage.getItem("cs_preview_ok")==="1"){document.documentElement.classList.add("cs-open");}</script>
 <link rel="stylesheet" href="style.css" />
@@ -13,7 +21,7 @@
 
 <nav id="nav">
   <div class="nav-inner">
-    <a class="brand" href="#top">CAL STONE</a>
+    <a class="brand" href="#top"><span class="brand-mark">CS</span>CAL STONE</a>
     <div class="nav-links">
       <a href="#library">Library</a>
       <a href="#bundle">Complete Library</a>
@@ -64,8 +72,8 @@
         <button class="pill" data-filter="Obstacle Racing">Obstacle Racing</button>
     </div>
     <div class="grid" id="grid">
-      <article class="card reveal" data-cat="Running">
-        <div class="cover-wrap"><img loading="lazy" src="covers/first-5k.jpg" alt="Your First 5K book cover" /></div>
+      <article class="card reveal" data-cat="Running" data-dir="first-5k" tabindex="0" role="button" aria-label="Preview Your First 5K">
+        <div class="cover-wrap"><img loading="lazy" src="covers/first-5k.jpg" alt="Your First 5K book cover" /><span class="cover-cta">Look inside</span></div>
         <h3>Your First 5K</h3>
         <p class="card-tag">From the Couch to the Finish Line in Ten Weeks</p>
         <p class="card-meta">10-week program · guide + logbook</p>
@@ -76,8 +84,8 @@
           </button>
         </div>
       </article>
-      <article class="card reveal" data-cat="Strength">
-        <div class="cover-wrap"><img loading="lazy" src="covers/women-strength.jpg" alt="Strength Training for Women book cover" /></div>
+      <article class="card reveal" data-cat="Strength" data-dir="women-strength" tabindex="0" role="button" aria-label="Preview Strength Training for Women">
+        <div class="cover-wrap"><img loading="lazy" src="covers/women-strength.jpg" alt="Strength Training for Women book cover" /><span class="cover-cta">Look inside</span></div>
         <h3>Strength Training for Women</h3>
         <p class="card-tag">Strong Is a Skill. Here's the Curriculum.</p>
         <p class="card-meta">12-week program · guide + logbook</p>
@@ -88,8 +96,8 @@
           </button>
         </div>
       </article>
-      <article class="card reveal" data-cat="Health &amp; Longevity">
-        <div class="cover-wrap"><img loading="lazy" src="covers/fat-loss.jpg" alt="The Fat Loss Program book cover" /></div>
+      <article class="card reveal" data-cat="Health &amp; Longevity" data-dir="fat-loss" tabindex="0" role="button" aria-label="Preview The Fat Loss Program">
+        <div class="cover-wrap"><img loading="lazy" src="covers/fat-loss.jpg" alt="The Fat Loss Program book cover" /><span class="cover-cta">Look inside</span></div>
         <h3>The Fat Loss Program</h3>
         <p class="card-tag">Lose the Fat. Keep the Muscle. Log the Proof.</p>
         <p class="card-meta">12-week program · guide + logbook</p>
@@ -100,8 +108,8 @@
           </button>
         </div>
       </article>
-      <article class="card reveal" data-cat="Strength">
-        <div class="cover-wrap"><img loading="lazy" src="covers/new-to-gym.jpg" alt="New to the Gym book cover" /></div>
+      <article class="card reveal" data-cat="Strength" data-dir="new-to-gym" tabindex="0" role="button" aria-label="Preview New to the Gym">
+        <div class="cover-wrap"><img loading="lazy" src="covers/new-to-gym.jpg" alt="New to the Gym book cover" /><span class="cover-cta">Look inside</span></div>
         <h3>New to the Gym</h3>
         <p class="card-tag">Walk In Nervous. Walk Out With a Program.</p>
         <p class="card-meta">12-week program · guide + logbook</p>
@@ -112,8 +120,8 @@
           </button>
         </div>
       </article>
-      <article class="card reveal" data-cat="Health &amp; Longevity">
-        <div class="cover-wrap"><img loading="lazy" src="covers/walking.jpg" alt="The Walking Program book cover" /></div>
+      <article class="card reveal" data-cat="Health &amp; Longevity" data-dir="walking" tabindex="0" role="button" aria-label="Preview The Walking Program">
+        <div class="cover-wrap"><img loading="lazy" src="covers/walking.jpg" alt="The Walking Program book cover" /><span class="cover-cta">Look inside</span></div>
         <h3>The Walking Program</h3>
         <p class="card-tag">The Most Underrated Workout on Earth, Finally Programmed</p>
         <p class="card-meta">12-week program · guide + logbook</p>
@@ -124,8 +132,8 @@
           </button>
         </div>
       </article>
-      <article class="card reveal" data-cat="Home &amp; Minimal">
-        <div class="cover-wrap"><img loading="lazy" src="covers/bodyweight.jpg" alt="No Gym Required book cover" /></div>
+      <article class="card reveal" data-cat="Home &amp; Minimal" data-dir="bodyweight" tabindex="0" role="button" aria-label="Preview No Gym Required">
+        <div class="cover-wrap"><img loading="lazy" src="covers/bodyweight.jpg" alt="No Gym Required book cover" /><span class="cover-cta">Look inside</span></div>
         <h3>No Gym Required</h3>
         <p class="card-tag">Your Body Is the Gym. Twelve Weeks to Prove It.</p>
         <p class="card-meta">12-week program · guide + logbook</p>
@@ -136,8 +144,8 @@
           </button>
         </div>
       </article>
-      <article class="card reveal" data-cat="Home &amp; Minimal">
-        <div class="cover-wrap"><img loading="lazy" src="covers/dumbbells-only.jpg" alt="Dumbbells Only book cover" /></div>
+      <article class="card reveal" data-cat="Home &amp; Minimal" data-dir="dumbbells-only" tabindex="0" role="button" aria-label="Preview Dumbbells Only">
+        <div class="cover-wrap"><img loading="lazy" src="covers/dumbbells-only.jpg" alt="Dumbbells Only book cover" /><span class="cover-cta">Look inside</span></div>
         <h3>Dumbbells Only</h3>
         <p class="card-tag">One Pair of Dumbbells. Every Result You Wanted.</p>
         <p class="card-meta">12-week program · guide + logbook</p>
@@ -148,8 +156,8 @@
           </button>
         </div>
       </article>
-      <article class="card reveal" data-cat="Health &amp; Longevity">
-        <div class="cover-wrap"><img loading="lazy" src="covers/over-40.jpg" alt="Stronger After 40 book cover" /></div>
+      <article class="card reveal" data-cat="Health &amp; Longevity" data-dir="over-40" tabindex="0" role="button" aria-label="Preview Stronger After 40">
+        <div class="cover-wrap"><img loading="lazy" src="covers/over-40.jpg" alt="Stronger After 40 book cover" /><span class="cover-cta">Look inside</span></div>
         <h3>Stronger After 40</h3>
         <p class="card-tag">Your Strongest Decade Hasn't Happened Yet</p>
         <p class="card-meta">12-week program · guide + logbook</p>
@@ -160,8 +168,8 @@
           </button>
         </div>
       </article>
-      <article class="card reveal" data-cat="Health &amp; Longevity">
-        <div class="cover-wrap"><img loading="lazy" src="covers/over-60.jpg" alt="Stronger After 60 book cover" /></div>
+      <article class="card reveal" data-cat="Health &amp; Longevity" data-dir="over-60" tabindex="0" role="button" aria-label="Preview Stronger After 60">
+        <div class="cover-wrap"><img loading="lazy" src="covers/over-60.jpg" alt="Stronger After 60 book cover" /><span class="cover-cta">Look inside</span></div>
         <h3>Stronger After 60</h3>
         <p class="card-tag">Strength Is the Best Medicine You Can Lift</p>
         <p class="card-meta">12-week program · guide + logbook</p>
@@ -172,8 +180,8 @@
           </button>
         </div>
       </article>
-      <article class="card reveal" data-cat="Strength">
-        <div class="cover-wrap"><img loading="lazy" src="covers/full-body.jpg" alt="The Full-Body Program book cover" /></div>
+      <article class="card reveal" data-cat="Strength" data-dir="full-body" tabindex="0" role="button" aria-label="Preview The Full-Body Program">
+        <div class="cover-wrap"><img loading="lazy" src="covers/full-body.jpg" alt="The Full-Body Program book cover" /><span class="cover-cta">Look inside</span></div>
         <h3>The Full-Body Program</h3>
         <p class="card-tag">Three Days a Week. Every Muscle, Every Session.</p>
         <p class="card-meta">12-week program · guide + logbook</p>
@@ -184,8 +192,8 @@
           </button>
         </div>
       </article>
-      <article class="card reveal" data-cat="Running">
-        <div class="cover-wrap"><img loading="lazy" src="covers/half-marathon.jpg" alt="The Half Marathon Plan book cover" /></div>
+      <article class="card reveal" data-cat="Running" data-dir="half-marathon" tabindex="0" role="button" aria-label="Preview The Half Marathon Plan">
+        <div class="cover-wrap"><img loading="lazy" src="covers/half-marathon.jpg" alt="The Half Marathon Plan book cover" /><span class="cover-cta">Look inside</span></div>
         <h3>The Half Marathon Plan</h3>
         <p class="card-tag">Thirteen-Point-One, Built One Week at a Time</p>
         <p class="card-meta">14-week program · guide + logbook</p>
@@ -196,8 +204,8 @@
           </button>
         </div>
       </article>
-      <article class="card reveal" data-cat="Running">
-        <div class="cover-wrap"><img loading="lazy" src="covers/marathon.jpg" alt="The Marathon Plan book cover" /></div>
+      <article class="card reveal" data-cat="Running" data-dir="marathon" tabindex="0" role="button" aria-label="Preview The Marathon Plan">
+        <div class="cover-wrap"><img loading="lazy" src="covers/marathon.jpg" alt="The Marathon Plan book cover" /><span class="cover-cta">Look inside</span></div>
         <h3>The Marathon Plan</h3>
         <p class="card-tag">Twenty-Six-Point-Two. Eighteen Weeks. One Ledger.</p>
         <p class="card-meta">18-week program · guide + logbook</p>
@@ -208,8 +216,8 @@
           </button>
         </div>
       </article>
-      <article class="card reveal" data-cat="Home &amp; Minimal">
-        <div class="cover-wrap"><img loading="lazy" src="covers/kettlebell.jpg" alt="Kettlebell Strong book cover" /></div>
+      <article class="card reveal" data-cat="Home &amp; Minimal" data-dir="kettlebell" tabindex="0" role="button" aria-label="Preview Kettlebell Strong">
+        <div class="cover-wrap"><img loading="lazy" src="covers/kettlebell.jpg" alt="Kettlebell Strong book cover" /><span class="cover-cta">Look inside</span></div>
         <h3>Kettlebell Strong</h3>
         <p class="card-tag">One Bell. Every Quality: Strength, Power, Engine.</p>
         <p class="card-meta">12-week program · guide + logbook</p>
@@ -220,8 +228,8 @@
           </button>
         </div>
       </article>
-      <article class="card reveal" data-cat="Health &amp; Longevity">
-        <div class="cover-wrap"><img loading="lazy" src="covers/hiit.jpg" alt="The HIIT Program book cover" /></div>
+      <article class="card reveal" data-cat="Health &amp; Longevity" data-dir="hiit" tabindex="0" role="button" aria-label="Preview The HIIT Program">
+        <div class="cover-wrap"><img loading="lazy" src="covers/hiit.jpg" alt="The HIIT Program book cover" /><span class="cover-cta">Look inside</span></div>
         <h3>The HIIT Program</h3>
         <p class="card-tag">Short. Brutal. Scheduled. And Finally Progressive.</p>
         <p class="card-meta">12-week program · guide + logbook</p>
@@ -232,8 +240,8 @@
           </button>
         </div>
       </article>
-      <article class="card reveal" data-cat="Strength">
-        <div class="cover-wrap"><img loading="lazy" src="covers/push-pull-legs.jpg" alt="Push Pull Legs book cover" /></div>
+      <article class="card reveal" data-cat="Strength" data-dir="push-pull-legs" tabindex="0" role="button" aria-label="Preview Push Pull Legs">
+        <div class="cover-wrap"><img loading="lazy" src="covers/push-pull-legs.jpg" alt="Push Pull Legs book cover" /><span class="cover-cta">Look inside</span></div>
         <h3>Push Pull Legs</h3>
         <p class="card-tag">The Highest-Volume Split in the Gym, Done Right</p>
         <p class="card-meta">12-week program · guide + logbook</p>
@@ -244,8 +252,8 @@
           </button>
         </div>
       </article>
-      <article class="card reveal" data-cat="Health &amp; Longevity">
-        <div class="cover-wrap"><img loading="lazy" src="covers/mobility.jpg" alt="The Mobility Program book cover" /></div>
+      <article class="card reveal" data-cat="Health &amp; Longevity" data-dir="mobility" tabindex="0" role="button" aria-label="Preview The Mobility Program">
+        <div class="cover-wrap"><img loading="lazy" src="covers/mobility.jpg" alt="The Mobility Program book cover" /><span class="cover-cta">Look inside</span></div>
         <h3>The Mobility Program</h3>
         <p class="card-tag">Touch Your Toes Again. And That's Just Week Four.</p>
         <p class="card-meta">12-week program · guide + logbook</p>
@@ -256,8 +264,8 @@
           </button>
         </div>
       </article>
-      <article class="card reveal" data-cat="Health &amp; Longevity">
-        <div class="cover-wrap"><img loading="lazy" src="covers/core.jpg" alt="The Core Program book cover" /></div>
+      <article class="card reveal" data-cat="Health &amp; Longevity" data-dir="core" tabindex="0" role="button" aria-label="Preview The Core Program">
+        <div class="cover-wrap"><img loading="lazy" src="covers/core.jpg" alt="The Core Program book cover" /><span class="cover-cta">Look inside</span></div>
         <h3>The Core Program</h3>
         <p class="card-tag">Abs Are Fine. A Core That Works Is Better.</p>
         <p class="card-meta">12-week program · guide + logbook</p>
@@ -268,8 +276,8 @@
           </button>
         </div>
       </article>
-      <article class="card reveal" data-cat="Home &amp; Minimal">
-        <div class="cover-wrap"><img loading="lazy" src="covers/thirty-minute.jpg" alt="The 30-Minute Program book cover" /></div>
+      <article class="card reveal" data-cat="Home &amp; Minimal" data-dir="thirty-minute" tabindex="0" role="button" aria-label="Preview The 30-Minute Program">
+        <div class="cover-wrap"><img loading="lazy" src="covers/thirty-minute.jpg" alt="The 30-Minute Program book cover" /><span class="cover-cta">Look inside</span></div>
         <h3>The 30-Minute Program</h3>
         <p class="card-tag">Half an Hour. No Filler. Every Minute Accounted For.</p>
         <p class="card-meta">12-week program · guide + logbook</p>
@@ -280,8 +288,8 @@
           </button>
         </div>
       </article>
-      <article class="card reveal" data-cat="Home &amp; Minimal">
-        <div class="cover-wrap"><img loading="lazy" src="covers/bands-only.jpg" alt="Bands Only book cover" /></div>
+      <article class="card reveal" data-cat="Home &amp; Minimal" data-dir="bands-only" tabindex="0" role="button" aria-label="Preview Bands Only">
+        <div class="cover-wrap"><img loading="lazy" src="covers/bands-only.jpg" alt="Bands Only book cover" /><span class="cover-cta">Look inside</span></div>
         <h3>Bands Only</h3>
         <p class="card-tag">A Gym That Fits in a Shoebox. A Program That Doesn't.</p>
         <p class="card-meta">12-week program · guide + logbook</p>
@@ -292,8 +300,8 @@
           </button>
         </div>
       </article>
-      <article class="card reveal" data-cat="Home &amp; Minimal">
-        <div class="cover-wrap"><img loading="lazy" src="covers/calisthenics.jpg" alt="Calisthenics Progressions book cover" /></div>
+      <article class="card reveal" data-cat="Home &amp; Minimal" data-dir="calisthenics" tabindex="0" role="button" aria-label="Preview Calisthenics Progressions">
+        <div class="cover-wrap"><img loading="lazy" src="covers/calisthenics.jpg" alt="Calisthenics Progressions book cover" /><span class="cover-cta">Look inside</span></div>
         <h3>Calisthenics Progressions</h3>
         <p class="card-tag">Pull-Up. Pistol. Handstand. Muscle-Up. Earn Them in Order.</p>
         <p class="card-meta">12-week program · guide + logbook</p>
@@ -304,8 +312,8 @@
           </button>
         </div>
       </article>
-      <article class="card reveal" data-cat="Strength">
-        <div class="cover-wrap"><img loading="lazy" src="covers/strength-conditioning.jpg" alt="Strength &amp; Conditioning book cover" /></div>
+      <article class="card reveal" data-cat="Strength" data-dir="strength-conditioning" tabindex="0" role="button" aria-label="Preview Strength &amp; Conditioning">
+        <div class="cover-wrap"><img loading="lazy" src="covers/strength-conditioning.jpg" alt="Strength &amp; Conditioning book cover" /><span class="cover-cta">Look inside</span></div>
         <h3>Strength &amp; Conditioning</h3>
         <p class="card-tag">Train Like an Athlete. Power, Speed, Strength, Engine.</p>
         <p class="card-meta">12-week program · guide + logbook</p>
@@ -316,8 +324,8 @@
           </button>
         </div>
       </article>
-      <article class="card reveal" data-cat="Strength">
-        <div class="cover-wrap"><img loading="lazy" src="covers/powerlifting.jpg" alt="The Powerlifting Program book cover" /></div>
+      <article class="card reveal" data-cat="Strength" data-dir="powerlifting" tabindex="0" role="button" aria-label="Preview The Powerlifting Program">
+        <div class="cover-wrap"><img loading="lazy" src="covers/powerlifting.jpg" alt="The Powerlifting Program book cover" /><span class="cover-cta">Look inside</span></div>
         <h3>The Powerlifting Program</h3>
         <p class="card-tag">Three Lifts. One Total. Twelve Weeks to a PR.</p>
         <p class="card-meta">12-week program · guide + logbook</p>
@@ -328,8 +336,8 @@
           </button>
         </div>
       </article>
-      <article class="card reveal" data-cat="Strength">
-        <div class="cover-wrap"><img loading="lazy" src="covers/upper-lower.jpg" alt="Upper Lower book cover" /></div>
+      <article class="card reveal" data-cat="Strength" data-dir="upper-lower" tabindex="0" role="button" aria-label="Preview Upper Lower">
+        <div class="cover-wrap"><img loading="lazy" src="covers/upper-lower.jpg" alt="Upper Lower book cover" /><span class="cover-cta">Look inside</span></div>
         <h3>Upper Lower</h3>
         <p class="card-tag">Four Days a Week. Strength and Size Without Living at the Gym.</p>
         <p class="card-meta">12-week program · guide + logbook</p>
@@ -340,8 +348,8 @@
           </button>
         </div>
       </article>
-      <article class="card reveal" data-cat="Strength">
-        <div class="cover-wrap"><img loading="lazy" src="covers/bro-split.jpg" alt="The Bro Split book cover" /></div>
+      <article class="card reveal" data-cat="Strength" data-dir="bro-split" tabindex="0" role="button" aria-label="Preview The Bro Split">
+        <div class="cover-wrap"><img loading="lazy" src="covers/bro-split.jpg" alt="The Bro Split book cover" /><span class="cover-cta">Look inside</span></div>
         <h3>The Bro Split</h3>
         <p class="card-tag">Chest Day Is Sacred. Now It's Programmed Properly.</p>
         <p class="card-meta">12-week program · guide + logbook</p>
@@ -352,8 +360,8 @@
           </button>
         </div>
       </article>
-      <article class="card reveal" data-cat="Home &amp; Minimal">
-        <div class="cover-wrap"><img loading="lazy" src="covers/pushup-pullup.jpg" alt="Push-Ups &amp; Pull-Ups book cover" /></div>
+      <article class="card reveal" data-cat="Home &amp; Minimal" data-dir="pushup-pullup" tabindex="0" role="button" aria-label="Preview Push-Ups &amp; Pull-Ups">
+        <div class="cover-wrap"><img loading="lazy" src="covers/pushup-pullup.jpg" alt="Push-Ups &amp; Pull-Ups book cover" /><span class="cover-cta">Look inside</span></div>
         <h3>Push-Ups &amp; Pull-Ups</h3>
         <p class="card-tag">Two Numbers That Tell the Truth About Strength</p>
         <p class="card-meta">12-week program · guide + logbook</p>
@@ -364,8 +372,8 @@
           </button>
         </div>
       </article>
-      <article class="card reveal" data-cat="Strength">
-        <div class="cover-wrap"><img loading="lazy" src="covers/garage-gym.jpg" alt="Garage Gym Strong book cover" /></div>
+      <article class="card reveal" data-cat="Strength" data-dir="garage-gym" tabindex="0" role="button" aria-label="Preview Garage Gym Strong">
+        <div class="cover-wrap"><img loading="lazy" src="covers/garage-gym.jpg" alt="Garage Gym Strong book cover" /><span class="cover-cta">Look inside</span></div>
         <h3>Garage Gym Strong</h3>
         <p class="card-tag">A Bar, a Rack, and Plates. Everything Else Is Optional.</p>
         <p class="card-meta">12-week program · guide + logbook</p>
@@ -376,8 +384,8 @@
           </button>
         </div>
       </article>
-      <article class="card reveal" data-cat="Endurance &amp; Sport">
-        <div class="cover-wrap"><img loading="lazy" src="covers/tactical.jpg" alt="Tactical Fit book cover" /></div>
+      <article class="card reveal" data-cat="Endurance &amp; Sport" data-dir="tactical" tabindex="0" role="button" aria-label="Preview Tactical Fit">
+        <div class="cover-wrap"><img loading="lazy" src="covers/tactical.jpg" alt="Tactical Fit book cover" /><span class="cover-cta">Look inside</span></div>
         <h3>Tactical Fit</h3>
         <p class="card-tag">Test Day Is Scheduled. Now Your Training Is Too.</p>
         <p class="card-meta">12-week program · guide + logbook</p>
@@ -388,8 +396,8 @@
           </button>
         </div>
       </article>
-      <article class="card reveal" data-cat="Endurance &amp; Sport">
-        <div class="cover-wrap"><img loading="lazy" src="covers/first-triathlon.jpg" alt="Your First Triathlon book cover" /></div>
+      <article class="card reveal" data-cat="Endurance &amp; Sport" data-dir="first-triathlon" tabindex="0" role="button" aria-label="Preview Your First Triathlon">
+        <div class="cover-wrap"><img loading="lazy" src="covers/first-triathlon.jpg" alt="Your First Triathlon book cover" /><span class="cover-cta">Look inside</span></div>
         <h3>Your First Triathlon</h3>
         <p class="card-tag">Swim. Bike. Run. One Logbook, One Finish Line.</p>
         <p class="card-meta">12-week program · guide + logbook</p>
@@ -400,8 +408,8 @@
           </button>
         </div>
       </article>
-      <article class="card reveal" data-cat="Endurance &amp; Sport">
-        <div class="cover-wrap"><img loading="lazy" src="covers/cycling.jpg" alt="The Cycling Program book cover" /></div>
+      <article class="card reveal" data-cat="Endurance &amp; Sport" data-dir="cycling" tabindex="0" role="button" aria-label="Preview The Cycling Program">
+        <div class="cover-wrap"><img loading="lazy" src="covers/cycling.jpg" alt="The Cycling Program book cover" /><span class="cover-cta">Look inside</span></div>
         <h3>The Cycling Program</h3>
         <p class="card-tag">Stronger Legs, Bigger Engine, Faster Everything</p>
         <p class="card-meta">12-week program · guide + logbook</p>
@@ -412,8 +420,8 @@
           </button>
         </div>
       </article>
-      <article class="card reveal" data-cat="Endurance &amp; Sport">
-        <div class="cover-wrap"><img loading="lazy" src="covers/golf-fitness.jpg" alt="The Golf Fitness Program book cover" /></div>
+      <article class="card reveal" data-cat="Endurance &amp; Sport" data-dir="golf-fitness" tabindex="0" role="button" aria-label="Preview The Golf Fitness Program">
+        <div class="cover-wrap"><img loading="lazy" src="covers/golf-fitness.jpg" alt="The Golf Fitness Program book cover" /><span class="cover-cta">Look inside</span></div>
         <h3>The Golf Fitness Program</h3>
         <p class="card-tag">More Speed at Impact, Fewer Aches at the Turn</p>
         <p class="card-meta">12-week program · guide + logbook</p>
@@ -424,8 +432,8 @@
           </button>
         </div>
       </article>
-      <article class="card reveal" data-cat="Endurance &amp; Sport">
-        <div class="cover-wrap"><img loading="lazy" src="covers/ruck.jpg" alt="Ruck book cover" /></div>
+      <article class="card reveal" data-cat="Endurance &amp; Sport" data-dir="ruck" tabindex="0" role="button" aria-label="Preview Ruck">
+        <div class="cover-wrap"><img loading="lazy" src="covers/ruck.jpg" alt="Ruck book cover" /><span class="cover-cta">Look inside</span></div>
         <h3>Ruck</h3>
         <p class="card-tag">Put Weight on Your Back and Go. It's That Simple.</p>
         <p class="card-meta">12-week program · guide + logbook</p>
@@ -436,8 +444,8 @@
           </button>
         </div>
       </article>
-      <article class="card reveal" data-cat="Endurance &amp; Sport">
-        <div class="cover-wrap"><img loading="lazy" src="covers/rowing.jpg" alt="The Rowing Program book cover" /></div>
+      <article class="card reveal" data-cat="Endurance &amp; Sport" data-dir="rowing" tabindex="0" role="button" aria-label="Preview The Rowing Program">
+        <div class="cover-wrap"><img loading="lazy" src="covers/rowing.jpg" alt="The Rowing Program book cover" /><span class="cover-cta">Look inside</span></div>
         <h3>The Rowing Program</h3>
         <p class="card-tag">Ten Meters at a Time, Down to a Faster 2K</p>
         <p class="card-meta">12-week program · guide + logbook</p>
@@ -448,8 +456,8 @@
           </button>
         </div>
       </article>
-      <article class="card reveal" data-cat="Running">
-        <div class="cover-wrap"><img loading="lazy" src="covers/trail-ready.jpg" alt="Trail Ready book cover" /></div>
+      <article class="card reveal" data-cat="Running" data-dir="trail-ready" tabindex="0" role="button" aria-label="Preview Trail Ready">
+        <div class="cover-wrap"><img loading="lazy" src="covers/trail-ready.jpg" alt="Trail Ready book cover" /><span class="cover-cta">Look inside</span></div>
         <h3>Trail Ready</h3>
         <p class="card-tag">Leave the Pavement. Twelve Weeks to the Ridgeline.</p>
         <p class="card-meta">12-week program · guide + logbook</p>
@@ -460,8 +468,8 @@
           </button>
         </div>
       </article>
-      <article class="card reveal" data-cat="Endurance &amp; Sport">
-        <div class="cover-wrap"><img loading="lazy" src="covers/hybrid-athlete.jpg" alt="The Hybrid Athlete book cover" /></div>
+      <article class="card reveal" data-cat="Endurance &amp; Sport" data-dir="hybrid-athlete" tabindex="0" role="button" aria-label="Preview The Hybrid Athlete">
+        <div class="cover-wrap"><img loading="lazy" src="covers/hybrid-athlete.jpg" alt="The Hybrid Athlete book cover" /><span class="cover-cta">Look inside</span></div>
         <h3>The Hybrid Athlete</h3>
         <p class="card-tag">Squat Heavy. Run Far. Refuse to Choose.</p>
         <p class="card-meta">12-week program · guide + logbook</p>
@@ -472,8 +480,8 @@
           </button>
         </div>
       </article>
-      <article class="card reveal" data-cat="Obstacle Racing">
-        <div class="cover-wrap"><img loading="lazy" src="covers/first-ocr.jpg" alt="Your First Obstacle Course Race book cover" /></div>
+      <article class="card reveal" data-cat="Obstacle Racing" data-dir="first-ocr" tabindex="0" role="button" aria-label="Preview Your First Obstacle Course Race">
+        <div class="cover-wrap"><img loading="lazy" src="covers/first-ocr.jpg" alt="Your First Obstacle Course Race book cover" /><span class="cover-cta">Look inside</span></div>
         <h3>Your First Obstacle Course Race</h3>
         <p class="card-tag">Everything You Need to Go From Sign-Up to Finish Line</p>
         <p class="card-meta">8-week program · guide + logbook</p>
@@ -484,8 +492,8 @@
           </button>
         </div>
       </article>
-      <article class="card reveal" data-cat="Obstacle Racing">
-        <div class="cover-wrap"><img loading="lazy" src="covers/ocr-5k.jpg" alt="OCR 5K book cover" /></div>
+      <article class="card reveal" data-cat="Obstacle Racing" data-dir="ocr-5k" tabindex="0" role="button" aria-label="Preview OCR 5K">
+        <div class="cover-wrap"><img loading="lazy" src="covers/ocr-5k.jpg" alt="OCR 5K book cover" /><span class="cover-cta">Look inside</span></div>
         <h3>OCR 5K</h3>
         <p class="card-tag">Short Course. Full Throttle. Ten Weeks to Your Fastest Race</p>
         <p class="card-meta">10-week program · guide + logbook</p>
@@ -496,8 +504,8 @@
           </button>
         </div>
       </article>
-      <article class="card reveal" data-cat="Obstacle Racing">
-        <div class="cover-wrap"><img loading="lazy" src="covers/ocr-10k.jpg" alt="OCR 10K book cover" /></div>
+      <article class="card reveal" data-cat="Obstacle Racing" data-dir="ocr-10k" tabindex="0" role="button" aria-label="Preview OCR 10K">
+        <div class="cover-wrap"><img loading="lazy" src="covers/ocr-10k.jpg" alt="OCR 10K book cover" /><span class="cover-cta">Look inside</span></div>
         <h3>OCR 10K</h3>
         <p class="card-tag">The Middle Distance: Too Long to Sprint, Too Short to Cruise</p>
         <p class="card-meta">12-week program · guide + logbook</p>
@@ -508,8 +516,8 @@
           </button>
         </div>
       </article>
-      <article class="card reveal" data-cat="Obstacle Racing">
-        <div class="cover-wrap"><img loading="lazy" src="covers/ocr-long.jpg" alt="OCR Long Course book cover" /></div>
+      <article class="card reveal" data-cat="Obstacle Racing" data-dir="ocr-long" tabindex="0" role="button" aria-label="Preview OCR Long Course">
+        <div class="cover-wrap"><img loading="lazy" src="covers/ocr-long.jpg" alt="OCR Long Course book cover" /><span class="cover-cta">Look inside</span></div>
         <h3>OCR Long Course</h3>
         <p class="card-tag">Thirteen-Plus Miles, Thirty-Plus Obstacles. Build for the Mountain.</p>
         <p class="card-meta">16-week program · guide + logbook</p>
@@ -520,8 +528,8 @@
           </button>
         </div>
       </article>
-      <article class="card reveal" data-cat="Obstacle Racing">
-        <div class="cover-wrap"><img loading="lazy" src="covers/ocr-ultra.jpg" alt="OCR Ultra book cover" /></div>
+      <article class="card reveal" data-cat="Obstacle Racing" data-dir="ocr-ultra" tabindex="0" role="button" aria-label="Preview OCR Ultra">
+        <div class="cover-wrap"><img loading="lazy" src="covers/ocr-ultra.jpg" alt="OCR Ultra book cover" /><span class="cover-cta">Look inside</span></div>
         <h3>OCR Ultra</h3>
         <p class="card-tag">When the Race Outlasts the Sun, Preparation Is Everything</p>
         <p class="card-meta">20-week program · guide + logbook</p>
@@ -532,8 +540,8 @@
           </button>
         </div>
       </article>
-      <article class="card reveal" data-cat="Obstacle Racing">
-        <div class="cover-wrap"><img loading="lazy" src="covers/obstacle-athlete.jpg" alt="The Obstacle Athlete book cover" /></div>
+      <article class="card reveal" data-cat="Obstacle Racing" data-dir="obstacle-athlete" tabindex="0" role="button" aria-label="Preview The Obstacle Athlete">
+        <div class="cover-wrap"><img loading="lazy" src="covers/obstacle-athlete.jpg" alt="The Obstacle Athlete book cover" /><span class="cover-cta">Look inside</span></div>
         <h3>The Obstacle Athlete</h3>
         <p class="card-tag">The Complete Training System for Obstacle Course Racers</p>
         <p class="card-meta">12-week program · guide + logbook</p>
@@ -632,6 +640,26 @@
   </div>
 </div>
 
+<div class="modal-backdrop pv-backdrop" id="preview" hidden>
+  <div class="pv" role="dialog" aria-modal="true" aria-labelledby="pv-title">
+    <button class="modal-x" id="pv-x" aria-label="Close">&times;</button>
+    <div class="pv-cover"><img id="pv-img" alt="" /></div>
+    <div class="pv-body">
+      <p class="pv-eyebrow" id="pv-cat"></p>
+      <h3 id="pv-title"></h3>
+      <p class="pv-sub" id="pv-sub"></p>
+      <p class="pv-headline" id="pv-headline"></p>
+      <p class="pv-copy" id="pv-copy"></p>
+      <p class="pv-inside-h">What's inside</p>
+      <ul class="pv-inside" id="pv-inside"></ul>
+      <div class="pv-buy">
+        <button class="btn-buy btn-buy-xl" id="pv-buy"><span class="bolt">&#9889;</span> Buy</button>
+        <span class="pv-note">Instant download · ePub + printable PDF · DRM-free</span>
+      </div>
+    </div>
+  </div>
+</div>
+
   <div id="preview-gate">
     <div class="pg-card">
       <div class="pg-bolt">&#9889;</div>
@@ -644,6 +672,7 @@
     </div>
   </div>
 
+<script>window.BOOKS={"first-5k":{"title":"Your First 5K","subtitle":"The Complete Beginner's Running Plan — 10 Weeks From First Walk to Finish Line, With a Built-In Running Logbook","tag":"From the Couch to the Finish Line in Ten Weeks","weeks":10,"dpw":4,"cat":"Running","headline":"Every runner you've ever admired started exactly where you are: not one yet.","body":"Running looks like a talent. It's actually a progression — and the run/walk method climbs it so gradually that your body barely notices it's becoming a runner's. This 10-week plan takes you from your first twenty-minute walk-run to a full 5K, three runs a week plus one easy walk, with every session pre-printed in the built-in logbook. No pace requirements. No gym. No shame in the walk breaks — they're the method."},"women-strength":{"title":"Strength Training for Women","subtitle":"The Complete 12-Week Lifting Program and Gym Logbook — Strong, Capable, and In Control of the Weight Room","tag":"Strong Is a Skill. Here's the Curriculum.","weeks":12,"dpw":4,"cat":"Strength","headline":"You won't get bulky. You'll get strong — and strong changes everything.","body":"The weight room delivers what the cardio floor keeps promising: a stronger, leaner, more capable body, better bones, a faster metabolism, and the particular confidence of moving heavy things on purpose. This 12-week program is the complete curriculum — squats, hinges, presses, and pulls taught from the first rep, programmed four days a week with clear progression, and every session pre-printed in the built-in logbook. The barbell doesn't know or care who's lifting it. Time it learned your numbers."},"fat-loss":{"title":"The Fat Loss Program","subtitle":"Training and Nutrition for Sustainable Fat Loss — the 12-Week Program and Logbook That Keep the Muscle","tag":"Lose the Fat. Keep the Muscle. Log the Proof.","weeks":12,"dpw":4,"cat":"Health & Longevity","headline":"Losing weight is easy. Losing fat — and only fat — is a program.","body":"Crash diets shed muscle, tank your energy, and hand the weight back with interest. Sustainable fat loss is quieter and permanent: lift to keep the muscle, walk and do intervals to burn the fat, eat protein in a modest deficit, and track everything so the mirror's slow news never fools you. This 12-week program packages the whole system — four training days, a nutrition framework without weighing rice, and a built-in logbook where workouts, measurements, and weekly averages all live."},"new-to-gym":{"title":"New to the Gym","subtitle":"The Complete Beginner's Gym Program — 12 Weeks From First Visit to Confident Lifter, With a Built-In Logbook","tag":"Walk In Nervous. Walk Out With a Program.","weeks":12,"dpw":3,"cat":"Strength","headline":"Nobody is looking at you. And after twelve weeks of this, you won't care if they are.","body":"The gym's dirty secret: half the people in there have no idea what they're doing either. The difference between wandering machines and actually training is a plan — and this one is built for your first twelve weeks: machine-based sessions that teach the movements safely, a guided graduation to free weights when you're ready, gym etiquette and vocabulary decoded, and every session pre-printed in the built-in logbook so you always walk in knowing exactly what you're there to do."},"walking":{"title":"The Walking Program","subtitle":"From First Steps to Fast Miles — the 12-Week Walking Plan for Fitness, Weight Loss, and Energy, With a Built-In Logbook","tag":"The Most Underrated Workout on Earth, Finally Programmed","weeks":12,"dpw":5,"cat":"Health & Longevity","headline":"Walking is the exercise everyone can do — which is exactly why nobody programs it. Their loss.","body":"Done with intent, walking lowers blood pressure, burns real calories, rebuilds joints instead of grinding them, and outlasts every fitness fad on record. What it's been missing is structure: this 12-week program progresses your distance, pace, and terrain five days a week — from easy twenty-minute loops to brisk hour-long miles with hills — plus two five-minute strength snacks a week to keep legs and balance honest. Every walk is pre-printed in the built-in logbook."},"bodyweight":{"title":"No Gym Required","subtitle":"The Bodyweight-Only Training Program You Can Do Anywhere — 12 Weeks of Workouts and a Built-In Logbook","tag":"Your Body Is the Gym. Twelve Weeks to Prove It.","weeks":12,"dpw":4,"cat":"Home & Minimal","headline":"No membership. No equipment. No excuses left.","body":"Push-ups, squats, lunges, planks, and their hundred harder cousins — progressed properly, bodyweight training builds strength and conditioning that stands up to any gym program. The trick is progression: knowing exactly when and how to make each movement harder. This 12-week, 4-day program handles that for you, with every workout pre-printed in the built-in logbook and a progression path for every movement from first rep to advanced variations."},"dumbbells-only":{"title":"Dumbbells Only","subtitle":"The Complete Home Training Program With Nothing but Dumbbells — 12 Weeks of Workouts and a Built-In Logbook","tag":"One Pair of Dumbbells. Every Result You Wanted.","weeks":12,"dpw":4,"cat":"Home & Minimal","headline":"The dumbbells in your spare room can build more muscle than most gym memberships ever do.","body":"You don't need a rack, a barbell, or forty machines. A pair of adjustable dumbbells and a plan beats a full gym and no plan — every time. This 12-week, 4-day program squeezes everything out of the equipment you already own: presses, rows, squats, hinges, carries, and the tempo and rep tricks that make moderate weights feel heavy. Every workout is pre-printed in the built-in logbook."},"over-40":{"title":"Stronger After 40","subtitle":"The Joint-Friendly Strength Training Program for Lifters Over 40 — 12 Weeks and a Built-In Gym Logbook","tag":"Your Strongest Decade Hasn't Happened Yet","weeks":12,"dpw":4,"cat":"Health & Longevity","headline":"After 40, you don't need an easier program. You need a smarter one.","body":"The lifters who fall apart after 40 aren't the ones who trained hard — they're the ones who kept training like they were 22. Recovery windows change. Warm-ups stop being optional. Joints vote. This 12-week, 4-day program is built for the second act: real strength work with intelligent exercise selection, built-in recovery management, and progression that respects connective tissue. Every workout is pre-printed in the built-in logbook."},"over-60":{"title":"Stronger After 60","subtitle":"The Safe, Serious Strength Program for Adults Over 60 — 12 Weeks and a Built-In Logbook","tag":"Strength Is the Best Medicine You Can Lift","weeks":12,"dpw":3,"cat":"Health & Longevity","headline":"After 60, strength training stops being fitness and starts being independence.","body":"Every year past sixty, muscle quietly leaves unless you give it a reason to stay — and the research is emphatic that it will stay, and return, at any age. This 12-week program is that reason: three days a week of safe, genuinely productive strength work — chair-height box squats to real deadlifts at your pace, presses, rows, balance and grip work — with warm-ups built in, progressions that respect joints, and every session pre-printed in the built-in logbook. Groceries, grandkids, gardens, and getting off the floor: this is the program for all of it."},"full-body":{"title":"The Full-Body Program","subtitle":"Three Days a Week to Total-Body Strength — the 12-Week Beginner-Friendly Program and Gym Logbook","tag":"Three Days a Week. Every Muscle, Every Session.","weeks":12,"dpw":3,"cat":"Strength","headline":"The most effective training split ever devised is also the simplest: everything, three times a week.","body":"Full-body training is how beginners get strong fastest and how busy lifters keep gaining on three days a week. Squat, press, and pull every session; add a little weight every week; recover on the four days between. That's the entire secret, and this book turns it into a system — a 12-week program with clear progression rules and every workout pre-printed in the built-in logbook."},"half-marathon":{"title":"The Half Marathon Plan","subtitle":"The Complete 14-Week Half Marathon Training Program and Running Logbook — From 5K Runner to 13.1 Finisher","tag":"Thirteen-Point-One, Built One Week at a Time","weeks":14,"dpw":5,"cat":"Running","headline":"The half marathon is the perfect distance: long enough to change you, short enough to keep your life.","body":"You can run a 5K. The half is calling. This 14-week program bridges the gap the proven way: a long run that grows patiently to twelve miles, one quality day for speed, easy runs that stay honestly easy, and the fueling and pacing craft the distance demands — every session pre-printed in the built-in logbook. Train five days a week, keep your weekends, and arrive at the start line knowing exactly what the next 13.1 will ask."},"marathon":{"title":"The Marathon Plan","subtitle":"The Complete 18-Week Marathon Training Program and Running Logbook — Base, Build, Peak, Taper, Finish","tag":"Twenty-Six-Point-Two. Eighteen Weeks. One Ledger.","weeks":18,"dpw":5,"cat":"Running","headline":"The marathon isn't a longer half. It's a different contract — and the wall is in the fine print.","body":"Every marathon story turns on the same three questions: did you run enough long miles, slowly enough? Did you practice fueling until it was reflex? And did you respect the taper? This 18-week program answers all three the proven way — a long run building to twenty miles, easy volume that stays easy, one quality day a week, and a fueling curriculum rehearsed from week six — with every session pre-printed in the built-in logbook. The wall is negotiable. The training isn't."},"kettlebell":{"title":"Kettlebell Strong","subtitle":"The Complete Kettlebell Training Program — Swings, Presses, Carries, and Flows — 12 Weeks and a Built-In Logbook","tag":"One Bell. Every Quality: Strength, Power, Engine.","weeks":12,"dpw":4,"cat":"Home & Minimal","headline":"The kettlebell is the only piece of equipment that trains strength, power, and conditioning without ever leaving your hand.","body":"Swings that build a bulletproof posterior chain. Presses and get-ups that forge shoulders. Carries and snatches that build an engine most runners would envy. The kettlebell does it all — if the programming respects the tool. This 12-week, 4-day program takes you from solid swing technique to owning the classic hardstyle lifts, with every session pre-printed in the built-in logbook."},"hiit":{"title":"The HIIT Program","subtitle":"High-Intensity Interval Training, Programmed Properly — 12 Weeks of Workouts With a Built-In Logbook","tag":"Short. Brutal. Scheduled. And Finally Progressive.","weeks":12,"dpw":4,"cat":"Health & Longevity","headline":"HIIT works. Random HIIT works for about three weeks.","body":"High-intensity intervals are the most time-efficient conditioning ever studied — and the most abused. Random workouts of the day, seven-minute miracles, burpee roulette: intensity without progression, which is why the results stall the moment your body adapts. This 12-week program treats HIIT like the training method it is: structured intervals that progress in work, rest, and rounds; recovery that's actually programmed; and every session pre-printed in the built-in logbook so this week measurably beats last week."},"push-pull-legs":{"title":"Push Pull Legs","subtitle":"The 6-Day PPL Split for Serious Muscle — the 12-Week Hypertrophy Program and Gym Logbook","tag":"The Highest-Volume Split in the Gym, Done Right","weeks":12,"dpw":6,"cat":"Strength","headline":"Every muscle trained twice a week. Every session with a single job. That's why PPL wins.","body":"Push, pull, legs, repeat — six days a week, each muscle hit twice, each session focused enough to push hard and short enough to recover from. It's the split serious lifters graduate to, and it lives or dies on tracking, because twelve different workouts a fortnight is too much to keep in your head. This 12-week program pre-prints every session in the built-in logbook: exercises, targets, and blank cells waiting for numbers that go up."},"mobility":{"title":"The Mobility Program","subtitle":"Fifteen Minutes a Day to Move Like You Used To — the 12-Week Mobility Plan and Built-In Logbook","tag":"Touch Your Toes Again. And That's Just Week Four.","weeks":12,"dpw":5,"cat":"Health & Longevity","headline":"You're not tight because you're getting old. You're tight because you stopped asking for range.","body":"Hips that won't open, a back that announces mornings, shoulders that can't find the top shelf — modern stiffness is mostly a use-it-or-lose-it story, and the fix is shorter than your commute: fifteen minutes a day of targeted, progressive mobility work. This 12-week program rebuilds you region by region — hips, spine, shoulders, ankles — with five short sessions a week, test-retest benchmarks that prove it's working, and every session pre-printed in the built-in logbook."},"core":{"title":"The Core Program","subtitle":"More Than Crunches — the Complete 12-Week Core Training Plan and Logbook for a Strong, Useful Midsection","tag":"Abs Are Fine. A Core That Works Is Better.","weeks":12,"dpw":4,"cat":"Health & Longevity","headline":"Your core's job was never to fold you in half a hundred times. It's to keep you from folding.","body":"The strongest cores in sport are built on anti-movement: resisting extension, resisting rotation, resisting the lean — planks, carries, dead bugs, pallof presses, and their harder cousins, progressed properly. This 12-week program trains all four core jobs four days a week in twenty-minute sessions that bolt onto any routine (or stand alone), with every session pre-printed in the built-in logbook. Visible abs remain a kitchen decision — but a core that transfers to every lift, run, and swing you own? That's programmable. Here's the program."},"thirty-minute":{"title":"The 30-Minute Program","subtitle":"Serious Strength for Busy People — 30 Minutes a Day, 4 Days a Week, 12 Weeks, and a Built-In Logbook","tag":"Half an Hour. No Filler. Every Minute Accounted For.","weeks":12,"dpw":4,"cat":"Home & Minimal","headline":"You don't lack discipline. You lack a program that respects your calendar.","body":"Most programs fail busy people the same way: they're written for someone with 90 spare minutes and infinite recovery. This one is engineered backwards from the 30 minutes you actually have — supersets, rest-period discipline, and exercise selection that buys the most adaptation per minute. Four days a week, every session done in half an hour, every workout pre-printed in the built-in logbook. Short doesn't mean easy. It means efficient."},"bands-only":{"title":"Bands Only","subtitle":"The Complete Resistance-Band Training Program — 12 Weeks of Full-Body Workouts Anywhere, With a Built-In Logbook","tag":"A Gym That Fits in a Shoebox. A Program That Doesn't.","weeks":12,"dpw":4,"cat":"Home & Minimal","headline":"The gym that fits in a carry-on has been waiting for a program worth packing.","body":"Resistance bands are the most underestimated training tool sold: variable resistance that's brutal where you're strongest, joint-friendly where you're vulnerable, scalable from rehab to genuinely hard — and they weigh less than your lunch. What bands lack is what this book supplies: structure. Four days a week for 12 weeks — pushes, pulls, squats, hinges, and carries, all banded, all progressive — with every session pre-printed in the built-in logbook, including the band-color tracking that makes progression real."},"calisthenics":{"title":"Calisthenics Progressions","subtitle":"From First Pull-Up to Muscle-Up — the Skill-Based Bodyweight Strength Program and 12-Week Logbook","tag":"Pull-Up. Pistol. Handstand. Muscle-Up. Earn Them in Order.","weeks":12,"dpw":4,"cat":"Home & Minimal","headline":"Calisthenics isn't a workout style. It's a skill tree — and every impressive move has a doorway.","body":"The muscle-up, the pistol squat, the handstand push-up, the front lever — none of them come from grinding reps. They come from climbing the right progression ladder, one earned hold at a time. This 12-week program organizes the whole skill tree into four training days a week, with every session pre-printed in the built-in logbook and clear tests that tell you exactly when you're ready for the next rung."},"strength-conditioning":{"title":"Strength & Conditioning","subtitle":"The Complete Athletic Training Program — Power, Strength, Speed, and Engine in 12 Weeks, With a Built-In Logbook","tag":"Train Like an Athlete. Power, Speed, Strength, Engine.","weeks":12,"dpw":4,"cat":"Strength","headline":"Fit is fine. Athletic is better.","body":"Somewhere between bodybuilding splits and cardio classes, fitness forgot what training was originally for: producing an athlete. Strength & Conditioning brings back the real thing — the four-day system strength coaches run with actual teams: explosive power work, heavy strength lifts, speed and agility, and a conditioning engine, periodized across 12 weeks. Whether you play a sport, coach one, or just want to move like an athlete again, every session is pre-printed in the built-in logbook."},"powerlifting":{"title":"The Powerlifting Program","subtitle":"Squat, Bench, Deadlift — the 12-Week Peaking Program and Lifting Logbook, From First Cycle to Meet Day","tag":"Three Lifts. One Total. Twelve Weeks to a PR.","weeks":12,"dpw":4,"cat":"Strength","headline":"The total doesn't care how you look. It cares what the bar weighed.","body":"Powerlifting is strength with a scoreboard: squat, bench press, deadlift, added up. This 12-week program takes you through a complete peaking cycle — volume block, strength block, peak, and a test day run like a real meet — with simple percentages, clear progression rules, and every session pre-printed in the built-in logbook. Whether you're eyeing your first sanctioned meet or just want a total worth telling people about, the bar path is drawn."},"upper-lower":{"title":"Upper Lower","subtitle":"The 4-Day Split That Fits Real Life — the 12-Week Strength and Muscle Program and Gym Logbook","tag":"Four Days a Week. Strength and Size Without Living at the Gym.","weeks":12,"dpw":4,"cat":"Strength","headline":"The upper/lower split is what happens when you optimize for both results and a life.","body":"Four days a week. Every muscle twice. Heavy days for strength, volume days for size, and a weekend that belongs to you. The upper/lower split is the workhorse of intelligent programming — flexible enough for real schedules, structured enough to drive real progress. This 12-week program gives you the full system with every session pre-printed in the built-in logbook."},"bro-split":{"title":"The Bro Split","subtitle":"The Classic 5-Day Bodybuilding Split, Done Right — the 12-Week Muscle-Building Program and Gym Logbook","tag":"Chest Day Is Sacred. Now It's Programmed Properly.","weeks":12,"dpw":5,"cat":"Strength","headline":"The internet loves to dunk on the bro split. The internet also skips leg day.","body":"One muscle group a day, five days a week — the split that built every gym you've ever walked into. Done lazily, it's a meme. Done right — with real progression rules, honest volume, and a logbook that keeps you accountable — it builds serious muscle and it's the most enjoyable way to train that exists. This 12-week program is the bro split done right: every workout pre-printed, every set logged, every week building on the last."},"pushup-pullup":{"title":"Push-Ups & Pull-Ups","subtitle":"From Zero to 50 Push-Ups and 10 Pull-Ups — the 12-Week Bodyweight Strength Standards Program and Logbook","tag":"Two Numbers That Tell the Truth About Strength","weeks":12,"dpw":3,"cat":"Home & Minimal","headline":"Fifty push-ups and ten pull-ups. Two numbers, no gym, no excuses — and no hiding from either.","body":"Ask any coach, drill sergeant, or PE teacher of the last century: the push-up and the pull-up are the two most honest strength tests a body can take. This 12-week program is a focused campaign on both — three sessions a week of graded progressions, volume waves, and technique fixes, engineered to carry a zero-pull-up beginner to strict reps and a shaky-ten push-upper toward fifty. Every session is pre-printed in the built-in logbook, because these two numbers only climb when they're counted."},"garage-gym":{"title":"Garage Gym Strong","subtitle":"The Complete Barbell Program for Your Home Gym — 12 Weeks of Squats, Presses, and Pulls With a Built-In Lifting Logbook","tag":"A Bar, a Rack, and Plates. Everything Else Is Optional.","weeks":12,"dpw":4,"cat":"Strength","headline":"A barbell, a rack, and a bench in your garage will outbuild any commercial gym — because you'll actually show up.","body":"The commute to your gym is eleven steps. No waiting for the squat rack, no closing hours, no one hogging the bench. All the garage gym asks is a plan worth following. This 12-week, 4-day barbell program is built entirely around the equipment you own — squat, bench, deadlift, press, rows — with intelligent accessories and every workout pre-printed in the built-in logbook."},"tactical":{"title":"Tactical Fit","subtitle":"The 12-Week Training Program for Military, Police, and Fire Fitness Tests — Strength, Running, and a Built-In Logbook","tag":"Test Day Is Scheduled. Now Your Training Is Too.","weeks":12,"dpw":5,"cat":"Endurance & Sport","headline":"The test has a date, a standard, and no interest in your excuses. Perfect — neither does this program.","body":"Military entrance tests, police academies, fire departments — the events vary, but the demands rhyme: push-ups, timed runs, sprints, carries, grip, and the engine to repeat them tired. This 12-week program trains the whole tactical package five days a week — strength, running, calisthenics volume, and loaded work — with test-simulation weeks built in and every session pre-printed in the built-in logbook. Whatever your test's exact menu, you'll arrive over-prepared, which is the only acceptable amount."},"first-triathlon":{"title":"Your First Triathlon","subtitle":"The Complete Sprint Triathlon Training Plan — 12 Weeks of Swim, Bike, and Run With a Built-In Logbook","tag":"Swim. Bike. Run. One Logbook, One Finish Line.","weeks":12,"dpw":5,"cat":"Endurance & Sport","headline":"Three sports sounds like three times the work. It's actually the most forgiving way to get fit.","body":"The sprint triathlon — a short swim, a 20K ride, a 5K run — is endurance sport's best-kept secret for beginners: three disciplines means no single one has to be impressive, and the variety keeps both your body and your motivation fresh. This 12-week plan builds all three from modest beginnings, teaches the transitions that flummox every first-timer, and pre-prints every session — swims, rides, runs, and bricks — in the built-in logbook."},"cycling":{"title":"The Cycling Program","subtitle":"The Complete 12-Week Cycling Training Plan — Build Your Engine Indoors or Out, With a Built-In Ride Logbook","tag":"Stronger Legs, Bigger Engine, Faster Everything","weeks":12,"dpw":4,"cat":"Endurance & Sport","headline":"Riding more only makes you better at riding the way you already ride.","body":"Most cyclists have one gear: medium. Every ride kind of hard, no ride actually hard, and a fitness plateau that no amount of extra miles will move. This 12-week program installs real structure — intervals that raise your ceiling, sweet-spot work that raises your cruising power, endurance rides that stay honest, and one strength day for the legs and back that hold it all together — indoors on a trainer or out on the road, with every ride pre-printed in the built-in logbook."},"golf-fitness":{"title":"The Golf Fitness Program","subtitle":"Add Distance and Save Your Back — the 12-Week Golf Strength and Mobility Program With a Built-In Logbook","tag":"More Speed at Impact, Fewer Aches at the Turn","weeks":12,"dpw":3,"cat":"Endurance & Sport","headline":"The longest hitters at your club aren't stronger golfers. They're golfers who got stronger.","body":"Swing speed is athleticism — rotational power, hip mobility, and a core that transfers force from the ground to the clubhead. All three are trainable off the course, and none require living in a gym: this 12-week program takes three 40-minute sessions a week — rotational power work, golf-specific strength, and the hip and thoracic mobility that lengthens backswings and careers — with every session pre-printed in the built-in logbook. Distance is the headline; the durable back and pain-free Sunday round are the lede."},"ruck":{"title":"Ruck","subtitle":"The Complete Rucking Program — Build Endurance, Carry Strength, and Mental Grit — 12 Weeks and a Built-In Logbook","tag":"Put Weight on Your Back and Go. It's That Simple.","weeks":12,"dpw":4,"cat":"Endurance & Sport","headline":"Humans are built to carry heavy things over long distances. Most of us just stopped.","body":"Rucking is the most underrated training tool in fitness: easier on the knees than running, harder on the engine than walking, and a builder of the kind of all-day strength no machine touches. Whether you're training for a ruck event, military selection, or just want to be harder to kill, this 12-week program progresses your distance, load, and pace week by week — with every ruck and strength session pre-printed in the built-in logbook."},"rowing":{"title":"The Rowing Program","subtitle":"The Complete 12-Week Indoor Rowing Plan — Technique, Engine, and a Faster 2K, With a Built-In Logbook","tag":"Ten Meters at a Time, Down to a Faster 2K","weeks":12,"dpw":4,"cat":"Endurance & Sport","headline":"The rowing machine is the most honest device in the gym. Most people row it dishonestly.","body":"The erg measures everything and forgives nothing — which makes it the perfect training tool and the worst place to wing it. This 12-week program builds you properly: stroke technique first (legs, body, arms — in that order), then an aerobic base, then the intervals that carve down your 2K time, with every session pre-printed in the built-in logbook. Whether the erg is your whole gym or your engine day, twelve weeks from now it will read a different athlete."},"trail-ready":{"title":"Trail Ready","subtitle":"The Complete Trail Running Program — From Road to Ridgeline in 12 Weeks, With a Built-In Running Logbook","tag":"Leave the Pavement. Twelve Weeks to the Ridgeline.","weeks":12,"dpw":5,"cat":"Running","headline":"The trail doesn't care about your road PR. It asks different questions entirely.","body":"Climbing legs. Descending confidence. Ankles that read rocky ground like braille. Trail running is a different sport wearing running's clothes, and this 12-week program makes the translation: hill strength, downhill skill, terrain-smart pacing by effort instead of pace, and the strength work that keeps trail runners out of the injury tent. Every run and session is pre-printed in the built-in logbook."},"hybrid-athlete":{"title":"The Hybrid Athlete","subtitle":"Get Strong and Run Fast at the Same Time — the 12-Week Concurrent Training Program and Workout Logbook","tag":"Squat Heavy. Run Far. Refuse to Choose.","weeks":12,"dpw":6,"cat":"Endurance & Sport","headline":"They told you lifting kills your run and running kills your gains. They were wrong on both counts.","body":"Concurrent training works — if it's programmed on purpose. The Hybrid Athlete is a 12-week, 6-day system that builds a serious squat and deadlift alongside a serious 5K-to-10K engine, managing the interference effect through session order, spacing, and intensity control instead of wishful thinking. Every lift and every run is pre-printed in the built-in logbook, so progress on both fronts stays visible in one place."},"first-ocr":{"title":"Your First Obstacle Course Race","subtitle":"The Complete Beginner's OCR Training Plan and 8-Week Workout Logbook — Strength, Running, Grip, and Race-Day Strategy in One Book","tag":"Everything You Need to Go From Sign-Up to Finish Line","weeks":8,"dpw":4,"cat":"Obstacle Racing","headline":"You signed up. Now let's get you to the finish line.","body":"Your first obstacle course race is closer than you think — and more doable than you fear. This book is a complete beginner's system: a plain-English guide to what race day actually demands, an 8-week training plan that fits around a real life, and a built-in logbook with every single workout pre-printed and ready to fill in. No gym-bro jargon. No 6-day-a-week fantasy schedule. Just four sessions a week that build the running engine, grip, and full-body strength obstacles demand."},"ocr-5k":{"title":"OCR 5K","subtitle":"Train for Your Fastest Short-Course Obstacle Race — the 10-Week Speed Program and Workout Logbook","tag":"Short Course. Full Throttle. Ten Weeks to Your Fastest Race","weeks":10,"dpw":5,"cat":"Obstacle Racing","headline":"The short course punishes one thing above all: slowing down.","body":"A 5K obstacle race is a sprint with interruptions — redlined running broken by obstacles that spike your heart rate and fry your grip. Racing it well means training speed, transitions, and recovery-under-fatigue. This 10-week program does exactly that: interval work to raise your engine, grip and pull sessions timed under fatigue, and obstacle-to-run transitions — every session pre-printed in the built-in logbook."},"ocr-10k":{"title":"OCR 10K","subtitle":"The Middle-Distance Obstacle Race Training Plan — 12-Week Program and Workout Logbook for Endurance, Grip, and Hills","tag":"The Middle Distance: Too Long to Sprint, Too Short to Cruise","weeks":12,"dpw":5,"cat":"Obstacle Racing","headline":"The 10K is where pacing mistakes stop being recoverable.","body":"Middle-distance obstacle races live in the uncomfortable gap: too long to redline, too short to settle in. Add hills and heavier carries and you have a race that punishes both the sprinter and the plodder. This 12-week plan builds the specific engine the distance demands — threshold running, hill repeats, loaded carries, and grip that survives an hour-plus of abuse — with every session pre-printed in the built-in logbook."},"ocr-long":{"title":"OCR Long Course","subtitle":"Train for Half-Marathon-Distance Obstacle Races — the 16-Week Endurance Program and Workout Logbook","tag":"Thirteen-Plus Miles, Thirty-Plus Obstacles. Build for the Mountain.","weeks":16,"dpw":5,"cat":"Obstacle Racing","headline":"At half-marathon distance, the course stops testing your speed and starts testing your durability.","body":"Long-course obstacle races are eating contests disguised as running races: calories, climbing, carries, and three-plus hours on your feet. Finishing strong is about durability — legs that still climb at mile ten, grip that still closes at obstacle twenty-five, and a fueling plan you've actually practiced. This 16-week program builds exactly that, with every long run, strength session, and fueling rehearsal pre-printed in the built-in logbook."},"ocr-ultra":{"title":"OCR Ultra","subtitle":"Train for Ultra-Distance Obstacle Races and 24-Hour Events — the 20-Week Program and Training Logbook","tag":"When the Race Outlasts the Sun, Preparation Is Everything","weeks":20,"dpw":5,"cat":"Obstacle Racing","headline":"Ultras aren't won by the fittest athlete. They're won by the best-prepared one.","body":"Ultra-distance obstacle events — 50K courses, multi-lap formats, 24-hour races — break people in ways shorter races never reveal: feet, stomach, mind, and the hours after midnight. This 20-week program builds the huge aerobic base, back-to-back long efforts, and night-and-nutrition rehearsals that ultra formats demand, with every session pre-printed in the built-in logbook — including crew plans, lap logs, and gear lists."},"obstacle-athlete":{"title":"The Obstacle Athlete","subtitle":"The Year-Round OCR Training Guide and 12-Week Workout Logbook — Build the Engine, Grip, and Grit Obstacle Racing Demands","tag":"The Complete Training System for Obstacle Course Racers","weeks":12,"dpw":5,"cat":"Obstacle Racing","headline":"Obstacle racing isn't running with interruptions. It's a sport. Train like it.","body":"Racers plateau because they train like runners who occasionally hang from things. The Obstacle Athlete is a complete year-round system: a 12-week, 5-day program that periodizes running, grip, pulling strength, and carry capacity — with every session pre-printed in the built-in logbook so your training history lives in one place. Whether you race short courses or long ones, this is the base that makes every distance faster."}};</script>
 <script src="config.js"></script>
 <script src="app.js"></script>
 </body>

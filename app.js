@@ -70,10 +70,54 @@
     modal.hidden = false;
   }
 
-  document.querySelectorAll(".btn-buy").forEach(b => b.addEventListener("click", () => {
-    const { dir, title, price } = b.dataset;
+  function buy(dir, title, price) {
     live ? buyLive(dir, price) : buyDemo(title, price);
+  }
+  document.querySelectorAll(".btn-buy[data-dir]").forEach(b => b.addEventListener("click", e => {
+    e.stopPropagation();
+    const { dir, title, price } = b.dataset;
+    buy(dir, title, price);
   }));
+
+  // book preview
+  const BOOKS = window.BOOKS || {};
+  const preview = document.getElementById("preview");
+  const EB = 7.99;
+  const money = n => "$" + (Number.isInteger(n) ? n : n.toFixed(2));
+  function openPreview(dir) {
+    const b = BOOKS[dir]; if (!b) return;
+    const img = document.getElementById("pv-img");
+    img.src = "covers/" + dir + ".jpg"; img.alt = b.title + " cover";
+    document.getElementById("pv-cat").textContent = b.cat;
+    document.getElementById("pv-title").textContent = b.title;
+    document.getElementById("pv-sub").textContent = b.subtitle;
+    document.getElementById("pv-headline").textContent = b.headline;
+    document.getElementById("pv-copy").textContent = b.body;
+    const sessions = b.dpw ? b.weeks * b.dpw : 0;
+    const inside = [
+      b.weeks + "-week program, mapped out week by week",
+      (sessions ? sessions + " workouts" : "Every session") + " — each pre-printed as a fill-in log page",
+      "Benchmark tests + a personal-record tracker",
+      "A plain-English guide explaining every choice",
+    ];
+    document.getElementById("pv-inside").innerHTML = inside.map(t => "<li>" + t + "</li>").join("");
+    const btn = document.getElementById("pv-buy");
+    btn.innerHTML = '<span class="bolt">\u26A1</span> Buy ' + money(EB);
+    btn.onclick = () => { preview.hidden = true; buy(dir, b.title, EB); };
+    preview.hidden = false;
+  }
+  document.querySelectorAll("#grid .card").forEach(c => {
+    c.addEventListener("click", e => { if (!e.target.closest(".btn-buy")) openPreview(c.dataset.dir); });
+    c.addEventListener("keydown", e => {
+      if (e.key === "Enter" || e.key === " ") { e.preventDefault(); openPreview(c.dataset.dir); }
+    });
+  });
+  document.getElementById("pv-x").addEventListener("click", () => preview.hidden = true);
+  preview.addEventListener("click", e => { if (e.target === preview) preview.hidden = true; });
+  document.addEventListener("keydown", e => {
+    if (e.key === "Escape") { preview.hidden = true; modal.hidden = true; }
+  });
+
   document.querySelectorAll(".m-tab").forEach(t => t.addEventListener("click", () => {
     document.querySelectorAll(".m-tab").forEach(x => x.classList.remove("active"));
     t.classList.add("active");
