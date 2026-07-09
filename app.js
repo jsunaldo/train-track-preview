@@ -68,6 +68,7 @@
     railSeed = title;
     fakeQr("ln:" + railSeed);
     modal.hidden = false;
+    syncScrollLock();
   }
 
   function buy(dir, title, price) {
@@ -84,6 +85,16 @@
   const preview = document.getElementById("preview");
   const EB = 7.99;
   const money = n => "$" + (Number.isInteger(n) ? n : n.toFixed(2));
+  // lock page scroll while any modal is open
+  function syncScrollLock() {
+    document.body.style.overflow = (!preview.hidden || !modal.hidden) ? "hidden" : "";
+  }
+  function closePreview(keepHash) {
+    preview.hidden = true;
+    if (!keepHash && location.hash.indexOf("#book=") === 0)
+      history.replaceState(null, "", location.pathname + location.search);
+    syncScrollLock();
+  }
   function openPreview(dir) {
     const b = BOOKS[dir]; if (!b) return;
     const img = document.getElementById("pv-img");
@@ -103,8 +114,11 @@
     document.getElementById("pv-inside").innerHTML = inside.map(t => "<li>" + t + "</li>").join("");
     const btn = document.getElementById("pv-buy");
     btn.innerHTML = '<span class="bolt">\u26A1</span> Buy ' + money(EB);
-    btn.onclick = () => { preview.hidden = true; buy(dir, b.title, EB); };
+    btn.onclick = () => { closePreview(); buy(dir, b.title, EB); };
     preview.hidden = false;
+    // shareable deep link: site/#book=first-5k opens this preview
+    history.replaceState(null, "", "#book=" + dir);
+    syncScrollLock();
   }
   document.querySelectorAll("#grid .card").forEach(c => {
     c.addEventListener("click", e => { if (!e.target.closest(".btn-buy")) openPreview(c.dataset.dir); });
@@ -112,19 +126,24 @@
       if (e.key === "Enter" || e.key === " ") { e.preventDefault(); openPreview(c.dataset.dir); }
     });
   });
-  document.getElementById("pv-x").addEventListener("click", () => preview.hidden = true);
-  preview.addEventListener("click", e => { if (e.target === preview) preview.hidden = true; });
+  document.getElementById("pv-x").addEventListener("click", () => closePreview());
+  preview.addEventListener("click", e => { if (e.target === preview) closePreview(); });
   document.addEventListener("keydown", e => {
-    if (e.key === "Escape") { preview.hidden = true; modal.hidden = true; }
+    if (e.key === "Escape") { closePreview(); modal.hidden = true; syncScrollLock(); }
   });
+  // open a deep-linked book on arrival
+  if (location.hash.indexOf("#book=") === 0) {
+    const dir = decodeURIComponent(location.hash.slice(6));
+    if (BOOKS[dir]) openPreview(dir);
+  }
 
   document.querySelectorAll(".m-tab").forEach(t => t.addEventListener("click", () => {
     document.querySelectorAll(".m-tab").forEach(x => x.classList.remove("active"));
     t.classList.add("active");
     fakeQr(t.dataset.rail + ":" + railSeed);
   }));
-  document.getElementById("modal-x").addEventListener("click", () => modal.hidden = true);
-  modal.addEventListener("click", e => { if (e.target === modal) modal.hidden = true; });
+  document.getElementById("modal-x").addEventListener("click", () => { modal.hidden = true; syncScrollLock(); });
+  modal.addEventListener("click", e => { if (e.target === modal) { modal.hidden = true; syncScrollLock(); } });
 })();
 
 // --- private preview gate (soft, client-side) ---
